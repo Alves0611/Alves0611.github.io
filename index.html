@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Alves</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Adiciona FontAwesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#projects">Projetos</a>
+    <a href="#certifications">Certificações</a>
+    <a href="#contact">Contatos</a>
+  </nav>
+  <header id="home" class="intro">
+    <div class="intro-content">
+      <div class="intro-text">
+        <h1>Olá, sou <span>Gabriel Alves</span></h1>
+        <p>Enginner DevSecOps | SRE</p>
+        <p>Sou apaixonado por desenvolver soluções inteligentes e automatizadas que simplificam processos complexos.
+          Tenho um forte compromisso com a eficiência, confiabilidade e automação, aliado a uma abordagem focada em
+          desenvolvimento ágil e design de sistemas escaláveis.</p>
+      </div>
+      <div class="intro-image">
+        <img src="images/logo.png" alt="Gabriel Alves">
+      </div>
+    </div>
+  </header>
+  <section id="tools" class="section">
+    <div class="tools-carousel">
+      <div><img src="images/aws.png" alt="AWS"></div>
+      <div><img src="images/terraform.png" alt="terraform"></div>
+      <div><img src="images/Kubernetes.png" alt="Kubernetes"></div>
+      <div><img src="images/Prometheus.png" alt="Prometheus"></div>
+      <div><img src="images/Grafana.svg" alt="Grafana"></div>
+      <div><img src="images/datadog.png" alt="datadog"></div>
+      <div><img src="images/github-actions.png" alt="gta"></div>
+      <div><img src="images/jenkins.svg" alt="jenkins"></div>
+      <div><img src="images/docker.png" alt="Docker"></div>
+      <div><img src="images/python.png" alt="python"></div>
+      <div><img src="images/Ansible.png" alt="Ansible"></div>
+      <div><img src="images/linux.png" alt="Linux"></div>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="images/architecture.drawio.svg" alt="Imagem do Projeto 1" />
+        <h3>Terraform ECS Fargate</h3>
+        <p>Este projeto demonstra a implementação de uma infraestrutura na AWS usando ECS Fargate para executar
+          aplicações em contêineres, organizada em diferentes módulos para facilitar a manutenção e a escalabilidade.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/AWS-ECS-Fargate" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/serverless.drawio.svg" alt="Imagem do Projeto 2" />
+        <h3>Terraform Serverless Application</h3>
+        <p>Este projeto implementa uma arquitetura serverless que inclui um backend e um frontend. O backend é
+          responsável por processar solicitações e manipular dados, enquanto o frontend é um aplicativo estático servido
+          pelo CloudFront, com alta disponibilidade e segurança via HTTPS.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/deploy-terraform-serverless-application" target="_blank"
+            class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/autoScalable.drawio.svg" alt="Imagem do Projeto 3" />
+        <h3>Application Auto Scalable</h3>
+        <p>Este projeto implementa uma arquitetura de alta disponibilidade na AWS usando o Terraform para
+          provisionamento de recursos. A arquitetura consiste em instâncias EC2 em sub-redes privadas distribuídas em
+          três Zonas de Disponibilidade, um Grupo de Auto Scaling para gerenciar essas instâncias, um Balanceador de
+          Carga para distribuir tráfego e uma instância de banco de dados RDS em uma sub-rede privada. Uma instância
+          adicional em uma sub-rede pública foi criada para simular um servidor Jenkins.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/autoscaling-app" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/eks.drawio.svg" alt="Imagem do Projeto 6" />
+        <h3>AWS EKS Module</h3>
+        <p>Este projeto Terraform permite a implantação automatizada de um cluster Amazon EKS (Elastic Kubernetes
+          Service) na AWS, utilizando uma arquitetura modularizada. Os submódulos incluem a configuração de
+          balanceamento de carga com o AWS Load Balancer Controller, a criação e gerenciamento do cluster EKS, grupos de
+          nós gerenciados e a configuração da rede subjacente. Com esta solução, você pode provisionar um ambiente
+          Kubernetes escalável, seguro e de alto desempenho, simplificando a administração e a manutenção da
+          infraestrutura de contêineres na nuvem</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/terraform-aws-eks" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/static.drawio.svg" alt="Imagem do Projeto 4" />
+        <h3>Static Website</h3>
+        <p>Este projeto Terraform permite a implantação de um site estático na AWS com recursos essenciais como Route
+          53, CloudFront, ACM e S3. Automatize sua configuração de infraestrutura para um site estático escalável e
+          seguro.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/static-website" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/runner.svg" alt="Imagem do Projeto 5" />
+        <h3>AWS App Runner Deployment</h3>
+        <p>Este projeto tem como objetivo demonstrar a configuração e a implantação de uma aplicação seguindo as
+          melhores práticas de DevOps. Usamos contêineres para garantir a portabilidade da aplicação, Terraform para
+          infraestrutura como provisionamento de código, GitHub Actions para automação de pipeline de CI/CD e AWS para
+          hospedagem e serviços de nuvem.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Alves0611/terraform-aws-app-runner-cicd" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <!-- Adicione mais projetos conforme necessário -->
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>Certificados e Certificações</h2>
+    <div class="certifications">
+      <div class="certification-card">
+        <img src="images/practitioner.png" alt="Imagem do Certificado 1" />
+        <h3>AWS Certified Cloud Practitioner - Foundational</h3>
+        <p>Valida a compreensão básica e de alto nível da Nuvem AWS, dos serviços e da terminologia.</p>
+        <div class="certification-buttons">
+          <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/?ch=sec&sec=rmg&d=1"
+            target="_blank" class="btn">Ver Certificação</a>
+        </div>
+      </div>
+      <div class="certification-card">
+        <img src="images/architect.png" alt="Imagem do Certificado 2" />
+        <h3>AWS Certified Solutions Architect - Associate</h3>
+        <p>Demonstra conhecimento e habilidades em tecnologia AWS, em uma ampla variedade de serviços AWS.</p>
+        <div class="certification-buttons">
+          <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/?ch=sec&sec=rmg&d=1"
+            target="_blank" class="btn">Ver Certificação</a>
+        </div>
+      </div>
+      <div class="certification-card">
+        <img src="images/developer.png" alt="Imagem do Certificado 3" />
+        <h3>AWS Certified Developer - Associate</h3>
+        <p>Valida a proficiência técnica no desenvolvimento, teste, implantação e depuração de aplicativos baseados na
+          nuvem AWS.</p>
+        <div class="certification-buttons">
+          <a href="https://aws.amazon.com/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1"
+            target="_blank" class="btn">Ver Certificação</a>
+        </div>
+      </div>
+      <!-- Adicione mais certificações conforme necessário -->
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contatos</h2>
+    <div class="contact-links">
+      <a href="https://wa.me/11956949234" class="contact-link whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.linkedin.com/in/gabrielalvesss/" class="contact-link linkedin" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Alves0611" class="contact-link github" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Gabriel Alves. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $('.tools-carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 0.3,
+        infinite: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 700,
+        dots: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.testimonials-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        dots: true,
+        arrows: true
+      });
+    });
+  </script>
+</body>
+
+</html>
